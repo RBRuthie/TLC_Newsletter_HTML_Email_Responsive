@@ -15,21 +15,110 @@
     .table-container{
       width: 960px;
     }
-  }
-  
+    .footer-left-td{
+      padding: 40px 0 40px 0 !important;
+    }
+    .footer-left-title, .footer-left-addr {
+        font-size: 18px !important;
+        padding: 0 0 0 0 !important;
+        margin: 0px 0 0 0 !important;
+        text-align: center !important;
+    }
+    .footer-right-td{
+      padding: 40px 0 40px 0 !important;
+    }
+    .footer-right-title, .footer-right-addr {
+      font-size: 18px !important;
+      padding: 0 0 0 0 !important;
+      margin: 0px 0 0 0 !important;
+      text-align: center !important;
+    }
+    .learn-more{
+      font-size: 23px !important;
+    }
 
+  }
   @media only screen and (max-width: 960px) {
     .table-container{
       width: 600px;
     }
+    .cat-illness img{
+      padding: 0px 17px 0 19px !important;
+    }
+    .service-highlight img{
+      padding: 0px 17px 0 16px !important;
+    }
   }
-
   @media only screen and (max-width: 600px) {
     .table-container{
       width: 100%;
     }
-  }
+        /*  header */
+    .header-title h1{
+      margin: 0 0 0 -17px !important;
+      font-size: 28px !important;
+    }
+    .header-title h2{
+      margin: 0px 29px 8px 0 !important;
+      font-size: 16px !important;
+    }
+        /*  thank you */
+    .thank-you h1{
+      font-size: 25px !important;
+    }
+    .thank-you hr{
+      width: 57% !important;
+    }
+    .thank-you p{
+      font-size: 15px !important;
+    }
+        /* location */
+    .location-update h1{
+      font-size: 22px !important;
+    }
+    .location-update p{
+      text-align: center !important;
+      font-size: 15px !important;
+    }
+        /* dog */
+    .service-highlight img{
+      width: 84% !important;
+    }
+    .service-highlight h1{
+      font-size: 20px !important;
+    }
+    .service-highlight p{
+      text-align: center !important;
+      font-size: 15px !important;
+    }
+         /* cat */
+    .cat-illness img{
+      width: 84% !important;
+    }
+    .cat-illness h1{
+      font-size: 20px !important;
+    }
+    .cat-illness p{
+      text-align: center !important;
+      font-size: 15px !important;
+    }
+      /*  icons */
+    .footer-locations ul{
+      display: contents;
+    }
 
+
+
+  }
+  @media only screen and (max-width: 320px) {
+      /*  icons */
+    .footer-locations ul{
+      display: block;
+    }
+
+
+
+  }
 </style>
 </head>
 
@@ -213,9 +302,9 @@
 
                     <table class="footer-locations-left" width="50%" cellspacing="0" cellpadding="0" border="0" align="left" style="padding: 0px 23px 0px 23px; font-size: 10px; font-family: 'Roboto', sans-serif; color: #060541;  ">
                       <tr>
-                        <td align=left style="padding: 20px 0 20px 0;">
-                          <h1 style="margin: 0; text-decoration: underline; font-size: 15px; font-weight: 600; ">New York</h1>
-                          <h2 style="margin: 0; font-size: 12px; font-weight: 400;">1101 Park Ave., <br>
+                        <td align=left class="footer-left-td" style="padding: 20px 0 20px 0;">
+                          <h1 class="footer-left-title" style="margin: 0; text-decoration: underline; font-size: 15px; font-weight: 600; ">New York</h1>
+                          <h2 class="footer-left-addr" style="margin: 0; font-size: 12px; font-weight: 400;">1101 Park Ave., <br>
                               908.232.1048<br>
                               M–F: 8am – 5pm, Sat: 8am – 6pm
                           </h2>
@@ -223,11 +312,11 @@
                       </tr>
                     </table>
 
-                    <table class="footer-locations-left" width="50%" cellspacing="0" cellpadding="0" border="0" align="left" style="padding: 0px 23px 0px 23px; font-size: 10px; font-family: 'Roboto', sans-serif; color: #060541; ">
+                    <table class="footer-locations-right" width="50%" cellspacing="0" cellpadding="0" border="0" align="left" style="padding: 0px 23px 0px 23px; font-size: 10px; font-family: 'Roboto', sans-serif; color: #060541; ">
                       <tr>
-                        <td align=left style="padding: 20px 0 20px 0;">
-                          <h1 style="margin: 0; text-decoration: underline; font-size: 15px; font-weight: 600;">New Jersey</h1>
-                          <h2 style="margin: 0; font-size: 12px; font-weight: 400;">1501 Main Ave., <br>
+                        <td align=left class="footer-right-td" style="padding: 20px 0 20px 0;">
+                          <h1 class="footer-right-title" style="margin: 0; text-decoration: underline; font-size: 15px; font-weight: 600;">New Jersey</h1>
+                          <h2 class="footer-right-addr" style="margin: 0; font-size: 12px; font-weight: 400;">1501 Main Ave., <br>
                               973.272.0015<br>
                               M–F: 8am – 8pm, Sat: 8am – 6pm
                           </h2>
@@ -237,7 +326,7 @@
 
                     <tr align=center>
                       <td>
-                        <h1 style="margin-bottom: -15px; font-size: 15px; font-weight: 300; ">To learn more, visit: www.tlcvetenarygroup.org</h1>
+                        <h1 class="learn-more" style="margin-bottom: -15px; font-size: 15px; font-weight: 300; ">To learn more, visit: www.tlcvetenarygroup.org</h1>
                       </td>
                     </tr>
 
@@ -266,20 +355,30 @@
                     <tr align=center style="list-style: none;">
                       <td>
                         <ul style="list-style: none; margin: 0 60px 0 0; ">
-                          <li style="display:inline-block; vertical-align: top;  margin: 5px; padding: 10px; ">
-                            <i class="fab fa-facebook-f" style="font-size: 30px; color: #060541"></i>
-                          </li>
+                       
+                            <li style="display:inline-block; vertical-align: top;  margin: 5px; padding: 10px; ">
+                            <a href="https://www.facebook.com" target="_blank">
+                              <i class="fab fa-facebook-f" style="font-size: 30px; color: #060541"></i>
+                            </a>
+                            </li>
+                          
 
                           <li style="display:inline-block; vertical-align: top;  margin: 5px; padding: 10px; ">
-                            <i class="fab fa-instagram" style="font-size: 30px; color: #060541"></i>
+                            <a href="https://www.instagram.com" target="_blank">
+                             <i class="fab fa-instagram" style="font-size: 30px; color: #060541"></i>
+                            </a>
                           </li>
 
                           <li style="display:inline-block; vertical-align: top;  margin: 5px; padding: 10px;">
-                            <i class="fab fa-twitter" style="font-size: 30px; color: #060541"></i>
+                            <a href="https://www.twitter.com" target="_blank">
+                              <i class="fab fa-twitter" style="font-size: 30px; color: #060541"></i>
+                            </a>
                           </li>
 
                           <li style="display:inline-block; vertical-align: top;  margin: 5px; padding: 10px;">
-                            <i class="fab fa-linkedin-in" style="font-size: 30px; color: #060541"></i>
+                            <a href="https://www.linkedin.com" target="_blank">
+                             <i class="fab fa-linkedin-in" style="font-size: 30px; color: #060541"></i>
+                            </a>
                           </li>
                         </ul>
                       </td>
